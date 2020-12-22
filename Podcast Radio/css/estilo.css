@@ -1,0 +1,37 @@
+body {
+    width: 80%;
+    margin: 110px auto;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+
+}
+
+
+.selectPodcast {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+
+input {
+    display: block;
+    margin: 17px;
+    
+}
+
+
+#rangeFrequency {
+    width: 500px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}

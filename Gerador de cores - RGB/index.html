@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Desafio das cores</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+<h1>Desafio das cores - RGB</h1>
+<div class="container">
+    <table border="1">
+        <thead>
+            <tr>
+                <th style="color: red;">(R) Vermelho</th>
+                <th style="color: green;">(G) Verde</th>
+                <th style="color: blue;">(B) Azul</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <!--inputRanges-->
+            <tr class="sizeBox">
+                <td style="background-color: red; opacity: 0.4;">
+
+                    <!--Range Vermelho ( R )-->
+                    <input class="rangeStyle" type="range" value="130" min="0" max="255" step="1" id="rangeRed" style="margin-left: 10px;">
+
+                </td>
+
+                <td style="background-color: green; opacity: 0.4;">
+
+                    <!--Range Verde ( G )-->
+                    <input class="rangeStyle" type="range" value="130" min="0" max="255" step="1" id="rangeGreen" style="margin-left: 10px;">
+
+                </td>
+
+                <td style="background-color: blue; opacity: 0.4;">
+            
+                    <!--Range Azul ( B )-->
+                    <input class="rangeStyle" type="range" value="130" min="0" max="255" step="1" id="rangeBlue" style="margin-left: 10px;">
+                </td>
+
+            </tr>
+
+
+            
+            <!--Inputs de leitura-->
+            <tr>
+                <td>
+                    <!--Input de leitura Vermelho ( R )-->
+                    <input type="text" id="inputRed" value="130" style="text-align: center; color: red;;"  readonly disabled>
+
+                </td>
+
+                <td>
+                    <!--Input de leitura Verde ( G )-->
+                    <input type="text" id="inputGreen" value="130" style="text-align: center; color: green;"   disabled>
+
+                </td>
+
+                <td>
+                    <!--Input de leitura Azul ( B )-->
+                    <input type="text" id="inputBlue" value="130" style="text-align: center; color: blue;"    readonly disabled>
+
+                </td>
+            </tr>
+
+            <!--Exibição das cores RGB-->
+            <tr class="content">
+                <td colspan="3">
+                    <div class="boxContent" id="color"></div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
